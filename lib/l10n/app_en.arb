@@ -1,5 +1,7 @@
 {
   "appTitle": "Islami",
   "suraName": "Sura Name",
-  "ahadeth": "Ahadeth"
+  "ahadeth": "Ahadeth",
+  "english": "English",
+  "arabic": "Arabic"
 }

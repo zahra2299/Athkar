@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/myThemeData.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class RadioTab extends StatelessWidget {
   const RadioTab({super.key});
@@ -11,7 +12,7 @@ class RadioTab extends StatelessWidget {
       children: [
         Image.asset("assets/images/radio_image.png"),
         Text(
-          "إذاعة القرآن الكريم",
+          AppLocalizations.of(context)!.quranBroadcast,
           style: Theme.of(context).textTheme.bodySmall,
         ),
         Row(

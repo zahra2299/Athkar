@@ -8,8 +8,11 @@ import 'package:islami/sura_details.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-      create: (context) => MyProvider(), child: const MyApp()));
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(
+      create: (context) => MyProvider(),
+    ),
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -31,6 +34,7 @@ class MyApp extends StatelessWidget {
         SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
         HadethDetails.routeName: (context) => HadethDetails(),
       },
+      themeMode: provider.theme,
       theme: MyThemeData.lightTheme,
       darkTheme: MyThemeData.darkTheme,
     );

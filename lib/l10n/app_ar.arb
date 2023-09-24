@@ -3,5 +3,11 @@
   "suraName": "اسم السورة",
   "ahadeth": "الأحاديث",
   "english": "الانجليزية",
-  "arabic": "العربية"
+  "arabic": "العربية",
+  "light": "مضيء",
+  "dark": "مظلم",
+  "language": "اللغة",
+  "mode": "السمة",
+  "quranBroadcast": "إذاعة القرآن الكريم",
+  "totalOfTasbeeh": "عدد التسبيحات"
 }

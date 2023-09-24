@@ -24,8 +24,12 @@ class LanguageBottomSheet extends StatelessWidget {
                 Text(AppLocalizations.of(context)!.english,
                     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                         color: provider.local == "en"
-                            ? MyThemeData.primaryColor
-                            : MyThemeData.blackColor)),
+                            ? provider.theme == ThemeMode.light
+                                ? Theme.of(context).colorScheme.primary
+                                : Theme.of(context).colorScheme.secondary
+                            : provider.theme == ThemeMode.light
+                                ? Theme.of(context).colorScheme.secondary
+                                : Theme.of(context).colorScheme.onPrimary)),
                 provider.local == "en"
                     ? Icon(Icons.done,
                         size: 30, color: MyThemeData.primaryColor)
@@ -44,8 +48,12 @@ class LanguageBottomSheet extends StatelessWidget {
                 Text(AppLocalizations.of(context)!.arabic,
                     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                         color: provider.local == "ar"
-                            ? MyThemeData.primaryColor
-                            : MyThemeData.blackColor)),
+                            ? provider.theme == ThemeMode.light
+                                ? Theme.of(context).colorScheme.primary
+                                : Theme.of(context).colorScheme.secondary
+                            : provider.theme == ThemeMode.light
+                                ? Theme.of(context).colorScheme.secondary
+                                : Theme.of(context).colorScheme.onPrimary)),
                 provider.local == "ar"
                     ? Icon(Icons.done,
                         size: 30, color: MyThemeData.primaryColor)

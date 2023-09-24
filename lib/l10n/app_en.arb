@@ -3,5 +3,11 @@
   "suraName": "Sura Name",
   "ahadeth": "Ahadeth",
   "english": "English",
-  "arabic": "Arabic"
+  "arabic": "Arabic",
+  "light": "Light",
+  "dark": "Dark",
+  "language": "Language",
+  "mode": "Mode",
+  "quranBroadcast": "Quran broadcast",
+  "totalOfTasbeeh": "Total of tasbeeh"
 }
